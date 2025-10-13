@@ -5,8 +5,14 @@ if SHIELD_CHOCOFI_DONGLE
 config ZMK_BLE
 	default y
 
+config ZMK_IDLE_TIMEOUT
+    default 0
+
 config ZMK_KEYBOARD_NAME
     default "chocofi"
+
+config ZMK_SLEEP
+    default n
 
 config ZMK_SPLIT
     default y
@@ -37,6 +43,6 @@ config ZMK_SLEEP
     default y
 
 config ZMK_IDLE_SLEEP_TIMEOUT
-    default 3600000
+    default 14400000 # 4 hours
 
 endif
