@@ -42,6 +42,9 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_SLEEP
     default y
 
+config ZMK_IDLE_TIMEOUT
+    default 7200000 # 2 hours
+
 config ZMK_IDLE_SLEEP_TIMEOUT
     default 14400000 # 4 hours
 
